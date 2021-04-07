@@ -1,0 +1,209 @@
+1주차 과제
+
+프론트엔드 프레임워크 
+
+
+1. Angular
+장점:
+	1) DI(Dependency Injection)의 강력한 지원을 통해, 기능에 따라 코드를 분리하고 재사용하는 것이 가능하다.
+	2) 웹페이지 속도 : 일반적인 웹페이지는 링크를 클릭할 때마다 서버에 새로운 페이지를 요청하지만,
+				Angular는 클라이언트 측에서 화면을 생성하고 필요한 데이터만 Ajax 요청을 통해 서버에서 내려받기 때문에
+				네트워크에 의한 딜레이가 적다.(웹페이지 속도가 빠르다.)
+	3) TypeScript를 사용하기 때문에 코드 유지 관리가 용이하다.
+
+단점:
+	1) Angular의 주력언어는 TypeScript이다. 따라서 TypeScript를 필수적으로 배워야한다.
+	   또한, Angular가 지니고 있는 여러가지 개념을 익히고 그 개념이 어떻게 TypeScript로 표현되는지도 익혀야한다.
+	2) 타 프레임워크에 비해 번들 사이즈가 크며 초기 로딩 시간이 길다.
+	3) SEO(Search Engine Optimization) 이슈가 있으며 해결을 위해 Angular Universal을 사용하게 되면
+	   Angular를 사용하는 이점이 적어질 수 있다.
+
+
+https://paperblock.tistory.com/52
+https://helloworld-88.tistory.com/36
+
+
+2. Vue.js
+
+장점:
+	1) 다른 프레임워크에 비해서 배우기 쉽코드의 가독성이 높고 직관적이다.
+	2) 상세한 문서와 가이드를 제공하는 공식 웹 사이트가 존재하며, 한국어 번역 페이지를 제공한다.
+	3) 기존의 HTML,JavaScript및 CSS로 이루어진 웹 표준 기술에 익숙하다면 기본 가이드만으로도 단순한 애플리케이션을 만들 수 있다.
+	
+	싱글 파일 컴포넌트 - DOM과 CSS, Script를 한 파일 내에서 관리할 수 있다
+
+단점:
+	1) Angular, React에 비해 자원이 한정적이다.
+	2) 대규모 프로젝트에 사용하기에는 아직까지 적합하지 않다.
+	3) 중국의 기업들이 Vue.js를 채개하면서 Vue.js 사용이 대중화 되면서 중국 시장이 확대되었다.
+	   그 결과, 포럼 or 플러그인 설명 및 중국어 지침서를 피할수 없을것이다.
+
+https://mygumi.tistory.com/206ㄴ
+https://www.webuters.com/advantages-and-disadvantages-of-using-vuejs/
+https://www.altexsoft.com/blog/engineering/pros-and-cons-of-vue-js/	
+
+3. Meteor.js
+
+장점:
+	1) 프론트엔드,백엔드 및 데이터베이스가 모두 Javascript를 사용하여 프로세스가 매우 단순화 된다.
+	   즉, javascript만으로 개발이 가능하다.
+	2) 빠르게 설치, 생성, 배포가 가능하며 프레임워크 설정이 쉽다.
+
+단점:
+	1) 데이터베이스는 MongoDB만을 지원한다.
+	2) 잦은 버전 업데이트에 따른 유지보수의 안정성이 떨어진다.
+	3) SSR(Server Side Rendering) 지원이 부족하다. 따라서 검색 엔진 최적화의 문제점이 있다.
+	
+https://www.valuecoders.com/blog/outsourcing-and-off-shoring/advantages-meteor-js-development/#6_Easy_To_Learn_Meteorjs
+https://cftouch.co.kr/wordpress/meteorjs%EC%9D%98-%EB%88%88%EC%97%90-%EB%9D%84%EB%8A%94-%ED%8A%B9%EC%A7%95/
+https://www.netvlies.nl/blogs/front-end-developers-short-trip-meteorjs-full-stack-javascript-framework-english
+	
+	
+4. Svelte 
+장점:
+	1) 적은 양의 코드로 동일한 동작을 하는 애플리케이션을 만들 수 있다.(
+	   코드의 양이 줄어들면서의 장점 - 번들 크기 감소, 유지 보수 비용 감소
+	2) 내부적으로 Store를 기본으로 제공함으로써, 변경된 상태 값을 DOM에 빠르게 반영할 수 있다.
+	3) 가상 DOM을 사용하지 않는다.   
+	   
+	   속도가 빠르다.
+	
+단점:
+	1) Svelte는 프레임워크이면서 컴파일러이기 때문에 이전에 빌드를 해야한다.
+	   따라서 다른 프레임워크에 비해 성능이 떨어지는 접근 방식이다.
+	   또한, 오류를 포함한 프로젝트를 컴파일 할 수 있도록 허용한다.
+	2) 타 프레임워크에 비해 패키지수가 상당히 적다.
+
+
+https://kim1124.tistory.com/60
+https://github.com/feltcoop/why-svelte
+https://www.ideamotive.co/blog/what-should-you-know-before-using-svelte-part-2
+
+
+5. Ember.js
+
+장점:
+	1) Ember CLI를 사용으로 빠르게 개발이 가능하다. 
+	2) Ember add-on name 명령을 사용하여 추가 기능을 쉽게 생성할 수 있다.
+	3) 버전이 업그레이드 되더라도 이전 버전과의 호환이 잘되어있다.
+
+단점:
+	1) HTML 파일을 수정하면 server를 다시 시작해야한다.
+	2) 프레임워크 중 가장 무겁다.
+	3) 커뮤니티의 규모가 작고 방대한 양의 튜토리얼로 학습이 오래 걸린다.
+
+https://selleo.com/blog/6-reasons-why-to-use-ember-in-2019
+https://jaxenter.com/angular-ember-or-vue-choice-135987.html
+https://www.quora.com/What-are-the-advantages-of-using-Ember-js-in-general
+
+프론트엔드 라이브러리
+
+1. JQuery
+
+2. React
+
+3. Lodash
+
+4. Moment
+
+5. Highlight.js
+
+6. chart.js
+
+https://medium.com/better-programming/10-awesome-javascript-libraries-for-front-end-developers-in-2020-d450b9ed66d1
+----------------------------------------
+
+백엔드 프레임워크
+
+1. Spring
+
+장점:
+	1) IOC(Inversion of Control) 특징을 이용하여 
+	   자바 코드로 직접 객체간의 결합을 코딩하는 것이 아니라 컨테이너로 처리하여(DI) 결합도를 낮춰 편리함을 제공합니다.
+	2) AOP(Aspect Oriented Programming)를 통해서 핵심 로직과 공통 모듈로 구분하고, 핵심 로직에 영향을 미치지 않고
+	   사이 사이에 공통 모듈을 효과적으로 끼워넣어 개발할 수 있다.
+	3) POJO(Plain Old Java Object)기반의 구성으로 높은 생산성과 유연한 테스트를 할 수 있다.
+
+단점:
+	1) 많은 기능을 제공해서 편리하지만, 그만큼 이 기능들을 습득하기 위해서 상당한 노력과 시간이 필요하다.
+	
+	
+
+https://medium.com/swlh/java-spring-framework-pros-cons-common-mistakes-d519b7caeeae
+
+2. Django
+
+장점:
+	1) Python 기반 웹프레임워크이기 때문에 파이썬의 다양한 라이브러리들을 사용할 수 있다.
+	2) 오픈 소스 이기 때문에 (djangoproject.com 와 Github에) 많은 사람들이 기여를 하고있다. 커뮤니티 활동 또한 활발하다.
+	3) 기본적인 기능들을 미리 만들어 제공해 쉽고 빠르게 개발이 가능하다.
+	4) XSS, CSRF, SQL Injection, Clickjacking 등 다양한 공격을 방지할 수 있는 방법들이 이미 구현되어 있어 보안이 좋다.
+
+단점:
+	1) Django는 동적 사이트를 위한 프레임워크이기 때문에 정적 사이트를 만드는데에는 적합하지 않다.
+	(동적 웹사이트 - WAS, DB 구성 / 정적 웹사이트 - 변화가 거의 없는 사이트에서 매 요청마다 HTML 재성성은 비효율적)
+	2) 파이썬을 사용하기 때문에 아키텍처를 잘못 설계하면 웹사이트의 속도가 느려질 수 있다.(파이썬 자체 속도가 빠르지 않기떄문에)
+	3) '설정보다는 관습이 우선(Convention Over Configuration)'이라는 접근법의 대표적인 사례인 루비 온 레일즈와 비교하자면,
+	장고는 모든 것을 명시적으로 규정해야한다. -> 환결설정과 관련한 문서를 별도를 만들어야한다. 이것이 개발 프로세스의 속도를 늦출수 있다.
+
+https://datafloq.com/read/advantages-and-disadvantages-of-using-django/3050
+http://blog.wishket.com/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EB%8B%A8%EC%A7%9D-%EC%9E%A5%EA%B3%A0django%EC%97%90-%EB%8C%80%ED%95%B4-5%EB%B6%84-%EC%95%88%EC%97%90-%EB%B9%A0%EB%A5%B4%EA%B2%8C/
+
+
+3. Laravel
+
+장점:
+	1) blade라는 심플하고 쉬운 템플릿 엔진을 내장하고 있어, 뷰 코드를 작성할 때 MVC 패러다임에 맞는 개발을 할 수 있다.
+	2) 다양한 DBMS를 지원하고, Java의 JDBC처럼 DB 레이어를 추상화한 레이어인 PDO(PHP Data Objects)를 사용하므로
+	   (mysql_fetch_array 나 oci_fetch_array 처럼) 특정 벤더에 의존적이지 않은 함수를 사용하지 않고도 데이타베이스 관련 코드를 작성할 수 있습니다. 또한, 의존성 주입을 사용하여 런타임에 사용할 DB를 결정하므로 설정 변경만으로 사용하는 DBMS 종류를
+	   변경할 수 있다.
+	3) PHPUnint이라는 단위 테스트 프레임워크와 유기적으로 통합되어 있어며 단위 테스트를 할 수 있도록 편리한 기능과 템플릿을 제공하고
+	   있으므로 손쉽게 단위 테스트를 만들고 실행할 수 있다.
+
+단점:
+	1) 요청을 처리하는데 다른 프레임워크에 비해서 느리다.
+	2) 많은 양의 정보를 동시에 처리하는 기능이 조금 떨어진다.
+	3) 버전 간의 연속성이 부족하다.
+
+https://www.courseya.com/blog/what-is-laravel-features-and-advantages/
+https://www.lesstif.com/laravelprog/database-24445831.html
+
+
+4. Flask
+
+장점:
+	1) 사용 및 확장이 용이하여, 자신이 원하는 설계 방향대로 프레임워크를 구축해 나갈 수 있다.
+	2) 프레임워크를 이해하기 쉽기 때문에 초보자가 배우기 좋다.
+
+단점:
+	1) 한 번에 하나의 요청을 차례로 처리하기 때문에 여러 요청을 처리하려는 경우는 시간이 많이 소요된다.
+	2) ORM 기능이 제공되지 않아서 양식 처리, 인증, 보안, DB 연결등의 기능을 개발자가 직접 처리해야 한다.
+
+https://blog.naver.com/PostView.nhn?blogId=acornzone&logNo=221408682369&parentCategoryNo=&categoryNo=1&viewDate=&isShowPopularPosts=true&from=search
+
+https://dev.to/detimo/python-flask-pros-and-cons-1mlo
+
+
+5. Ruby on rails
+
+장점:
+	1) 개발언어로 루비를 사용하고, 서드 파티 라이브러리와 결합하면 기능을 매우 빠르게 개발할 수 있다.(생산성이 좋다.)
+	2) 루비를 사용하기 떄문에 같은 기능을 하는 코드를 짜더라도 간결하게 짤 수 있다. 코드가 간결해서 개발이 용이(코드가 간결)
+
+단점:
+	1) 런타임 속도 다른 프레임워크(Node.js 또는 Django)보다 느리다.
+	2) 파일과 종속성의 수에 따라 시작 단계에서의 부팅 속도가 상당히 걸린다.
+	
+	
+https://mindstack.in/blog/advantages-ruby-rails/
+https://freemoa-blog.com/903
+
+
+백엔드 라이브러리
+
+https://www.programmableweb.com/category/backend/libraries
+
+----------------------------------
+Framework VS Libray
+
+https://webclub.tistory.com/458
